@@ -1,0 +1,464 @@
+/* import font family */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #f1f3f6;
+    letter-spacing: 0;
+
+    /* adding the font family */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* making variables in css */
+:root {
+    --primary-color: #2874f0;
+}
+
+/* ------------------------------------ header ------------------------------------ */
+
+header {
+    width: 100%;
+    padding-bottom: 56px;
+
+}
+
+header .nav_container {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 56px;
+    display: flex;
+    position: fixed;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+
+    /* to prevent overlap by other content */
+    z-index: 1;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    /* 100% height of parent container */
+    height: 100%;
+    max-width: 1248px;
+    margin: 0 auto;
+}
+
+header .navbar .logo {
+    display: flex;
+    min-width: 137px;
+    justify-content: flex-end;
+}
+
+header .navbar .logo .plus_parent {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .navbar .logo .plus_parent a {
+    margin-top: -4px;
+    margin-right: 4px;
+    text-decoration: none;
+    font-size: 11px;
+    font-style: italic;
+    color: #f1f3f6;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+}
+
+header .navbar .logo .plus_parent a .plus {
+    color: #ffe500;
+    font-weight: 500;
+    margin-left: 2px;
+    margin-right: 2px;
+
+}
+
+header .navbar .logo .plus_parent a img {
+    width: 10px;
+    height: 10px;
+}
+
+header .navbar .logo img {
+    width: 75px;
+}
+
+header .navbar .search {
+    /* margin: 0 auto 0 12px; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+}
+
+header .navbar .search .search_container {
+    width: 540px;
+    height: 36px;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 23%);
+    display: flex;
+}
+
+header .navbar .search .search_container input {
+    width: calc(100% - 32px);
+    padding: 16px;
+
+    /* when you click text box, outline appears.. this removes it */
+    outline: none;
+
+    /* removes border of input box */
+    border: none;
+    border-radius: 2px;
+}
+
+header .navbar .search .search_container button {
+    width: 36px;
+    height: 100%;
+    padding: 0 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* to bring the hand cursor */
+    cursor: pointer;
+
+    /* padding: 4px 12px 0 8px; */
+
+    background-color: white;
+    /* removes border of input box */
+    border: none;
+    border-radius: 2px;
+}
+
+header .navbar .login {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 28px;
+}
+
+header .navbar .login button {
+    width: 122px;
+    padding: 5px 40px;
+    font-size: 16px;
+
+    /* making font bold */
+    font-weight: 500;
+
+    height: 32px;
+    color: var(--primary-color);
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    cursor: pointer;
+}
+
+header .navbar .become_seller {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+
+}
+
+header .navbar .become_seller a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+header .navbar .more {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+header .navbar .more a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+header .navbar .more svg {
+    /* rotates the icon */
+    rotate: -90deg;
+
+    margin-left: 2px;
+}
+
+header .navbar .cart {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+header .navbar .cart a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+header .navbar .cart svg {
+    margin-right: 2px;
+}
+
+
+/* ------------------------------------ section 1 ------------------------------------ */
+
+.section-1 {
+    width: 100%;
+    height: 122px;
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+}
+
+.section-1 .section-1-container {
+    width: 1280px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    /* adds space between contents */
+    justify-content: space-between;
+}
+
+.section-1 .section-1-item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
+
+    /*  vertical allignment */
+    justify-content: center;
+
+
+    /*  puts a gap between the elements */
+    gap: 4px;
+}
+
+.section-1 .section-1-item img {
+    width: 64px;
+    height: 64px;
+}
+
+/* ------------------------------------ parent container for sec 2, 3.. ------------------------------------ */
+.parent_container {
+    position: relative;
+    width: auto;
+    padding: 8px;
+    margin: 0 auto;
+}
+
+/* ------------------------------------ section 2 ------------------------------------ */
+
+.section-2 {
+    margin-top: 8px;
+    height: 280px;
+    background-image: url('https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/9a8a82392d7b8dd9.jpg?q=50');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ------------------------------------ section 3 ------------------------------------ */
+
+.section-3 .section-3-container {
+    margin-top: 8px;
+    height: 341.6px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-3 .section-3-container .electronics_img {
+    width: 230px;
+    height: 100%;
+    background-image: url('https://rukminim1.flixcart.com/fk-p-flap/278/278/image/7593e7b6640822c1.jpg?q=90');
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+
+.section-3 .section-3-container .electronics {
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+
+    padding: 50px 10px 124px;
+    align-items: center;
+}
+
+.section-3 .section-3-container .electronics h2 {
+    font-size: 30px;
+    font-weight: 400;
+
+    /*  specifies verical distance between two lines */
+    line-height: 1.4;
+    text-align: center;
+}
+
+.section-3 .section-3-container .electronics a {
+    margin: 0px;
+    text-decoration: none;
+    background-color: #2874f0;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    outline: none;
+}
+
+/* ------------------ list is common for all such scroll containers ------------------ */
+
+
+.list {
+    height: 100%;
+    width: calc(100% - 230px);
+    display: flex;
+    overflow: auto;
+}
+
+.list .item {
+    width: 232px;
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    line-height: 1.4;
+}
+
+.list .item .img_container {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.list .item img {
+    max-width: 200px;
+    max-height: 200px;
+    margin: auto;
+}
+
+.list .item .section_3_item_head {
+    font-size: 14px;
+    font-weight: 500;
+
+    /* to make text come on single line */
+    white-space: nowrap;
+}
+
+.list .item .section_3_item_price {
+    font-size: 16px;
+    color: #388e3c;
+    padding-top: 8px;
+    white-space: nowrap;
+
+}
+
+.list .item .section_3_item_explore {
+    font-size: 14px;
+    color: inherit;
+    opacity: .6;
+    padding-top: 7px;
+    white-space: nowrap;
+
+}
+
+/* ------------------------------------ section 4 ------------------------------------ */
+
+.section-4 .section-4-container {
+    margin-top: 8px;
+    height: 341.6px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-4 .section-4-container .btfm_img {
+    width: 230px;
+    height: 100%;
+    background-image: url('https://rukminim1.flixcart.com/fk-p-flap/278/278/image/b84f1c22cce1a6a3.jpg?q=90');
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+
+.section-4 .section-4-container .btfm {
+    display: flex;
+    flex-direction: column;
+
+    padding: 50px 10px 124px;
+    align-items: center;
+}
+
+.section-4 .section-4-container .btfm h2 {
+    font-size: 30px;
+    font-weight: 400;
+
+    /*  specifies verical distance between two lines */
+    line-height: 1.4;
+    text-align: center;
+}
+
+.section-4 .section-4-container .btfm a {
+    margin: 0px;
+    text-decoration: none;
+    background-color: #2874f0;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    outline: none;
+}
+
+/* ------------------------------------  footer  ------------------------------------ */
+
+footer .footer_container .lower_footer {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid #454d5e;
+    background: #172337;
+    color: white;
+    padding: 25px 0;
+    margin-top: 40px;
+}
+
+footer .lower_footer>div {
+    display: flex;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.4;
+    /* margin-left: 8px; */
+}
+
+footer .lower_footer>div>div {
+    margin-left: 8px;
+
+    /* to make text come on single line */
+    white-space: nowrap;
+}
