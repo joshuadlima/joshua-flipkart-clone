@@ -95,6 +95,7 @@ header .navbar .search {
 
 header .navbar .search .search_container {
     width: 540px;
+    min-width: 304px;
     height: 36px;
     background-color: white;
     border-radius: 2px;
@@ -225,11 +226,12 @@ header .navbar .cart svg {
 }
 
 .section-1 .section-1-container {
-    width: 1280px;
+    width: 100%;
     margin: 0 auto;
     height: 100%;
     display: flex;
     align-items: center;
+    max-width: 1280px;
 
     /* adds space between contents */
     justify-content: space-between;
@@ -247,9 +249,16 @@ header .navbar .cart svg {
     /*  vertical allignment */
     justify-content: center;
 
-
     /*  puts a gap between the elements */
     gap: 4px;
+}
+
+#first_item {
+    padding-left: 22px;
+}
+
+#last_item {
+    margin-right: 22px;
 }
 
 .section-1 .section-1-item img {
