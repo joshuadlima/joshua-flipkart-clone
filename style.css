@@ -43,6 +43,7 @@ header .navbar {
     height: 100%;
     max-width: 1248px;
     margin: 0 auto;
+    overflow: auto;
 }
 
 header .navbar .logo {
@@ -86,7 +87,6 @@ header .navbar .logo img {
 }
 
 header .navbar .search {
-    /* margin: 0 auto 0 12px; */
     height: 100%;
     display: flex;
     align-items: center;
@@ -232,6 +232,7 @@ header .navbar .cart svg {
     display: flex;
     align-items: center;
     max-width: 1280px;
+    overflow-x: auto;
 
     /* adds space between contents */
     justify-content: space-between;
@@ -449,12 +450,14 @@ header .navbar .cart svg {
 
 footer .footer_container .lower_footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     border-top: 1px solid #454d5e;
     background: #172337;
     color: white;
     padding: 25px 0;
     margin-top: 40px;
+    overflow: auto;
 }
 
 footer .lower_footer>div {
@@ -462,7 +465,7 @@ footer .lower_footer>div {
     text-align: left;
     font-size: 14px;
     line-height: 1.4;
-    /* margin-left: 8px; */
+    align-items: center;
 }
 
 footer .lower_footer>div>div {
