@@ -94,8 +94,9 @@ header .navbar .search {
 }
 
 header .navbar .search .search_container {
-    width: 540px;
+    width: 37vw;
     min-width: 304px;
+    max-width: 540px;
     height: 36px;
     background-color: white;
     border-radius: 2px;
@@ -170,6 +171,7 @@ header .navbar .become_seller a {
     color: white;
     font-size: 16px;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 header .navbar .more {
@@ -177,6 +179,8 @@ header .navbar .more {
     display: flex;
     align-items: center;
     margin: 0 20px;
+    white-space: nowrap;
+
 }
 
 header .navbar .more a {
@@ -198,6 +202,7 @@ header .navbar .cart {
     display: flex;
     align-items: center;
     margin: 0 20px;
+    white-space: nowrap;
 
     color: white;
     font-size: 16px;
